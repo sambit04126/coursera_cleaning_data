@@ -49,17 +49,17 @@ This is the final output after the transformation.
 ##How the script works ?
 
 1. Loads dplyr library. This library has methods which are used in this script
-2. Download file from the location as as specified in the assignment and save in data folder inside workspace 
-3. Unzip the file. Extacted files will be under "./data/UCI HAR Dataset"
-4. Extract featurs and activity data and stored them in the variables 
-5. extract files X_test.txt and X_train.txt from test and train folder respectively and combine them as xall
+2. Downloads the file from the location as as specified in the assignment and save in data folder inside workspace 
+3. Unzips the file. Extacted files will be under "./data/UCI HAR Dataset"
+4. Extracts featurs and activity data and stored them in the variables 
+5. Extracts files X_test.txt and X_train.txt from test and train folder respectively and combine them as xall
 6. Assign the column names to xall data set by from features
 7. Extracts only the measurements on the mean and standard deviation for each measurement as datauseX. 
 8. Extracts files Y_test.txt and Y_train.txt from test and train folder respectively and combine them as yall
 9. Joins yall dataset with activity data set to get the descriptive names of the activities.
 10. Adds the Activity column to datauseX data set
 11. Extracts files subject_test.txt and subject_train.txt from test and train folder respectively and combine them as sall
-12. Add the Subject column to datauseX data set
+12. Adds the Subject column to datauseX data set
 13. Using group_by from dplyr package, creates a grouped dataset by Subject and Activity
 14. Creates a second, independent tidy data set with the average, of each variable for each activity and each subject using summarise_each
 15. Saves the tidy data set to a file.
