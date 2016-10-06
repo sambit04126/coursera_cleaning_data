@@ -25,3 +25,19 @@ Following variables are used in this analysis
 | sall       | rbind(stest,strain)                            | data.frame | subject all data                             |
 | grouped    | group_by(datauseX,Subject,Activity)            | grouped_df | Data grouped by Subject and Activity         |
 | summarised | summarise_each(grouped,funs(mean))             | grouped_df | Summarised data with mean                    |
+
+
+##Data
+
+Following data is used in this analysis
+
+| Data                    | Definition                                                                          |
+|-------------------------|-------------------------------------------------------------------------------------|
+| features.txt            | List of all features.                                                               |
+| activity_labels.txt     | Links the class labels with their activity name.                                    |
+| train/X_train.txt       | Training set.                                                                       |
+| train/y_train.txt       | Training labels.                                                                    |
+| test/X_test.txt         | Test set.                                                                           |
+| test/y_test.txt         | Test labels.                                                                        |
+| test/subject_test.txt   | Identifies the test subjects who performed the activity for each window sample.     |
+| train/subject_train.txt | Identifies the training subjects who performed the activity for each window sample. |
