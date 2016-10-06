@@ -66,7 +66,7 @@ summarised <- summarise_each(grouped,funs(mean));
 names(summarised)<-gsub("\\(\\)","",names(summarised));
 
 #save the tidy data set to a file.
-write.csv(summarised,"./data/tidy.csv");
+write.table(summarised,"./data/tidy.txt",row.name=FALSE);
 
 ##End
 
