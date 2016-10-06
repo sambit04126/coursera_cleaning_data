@@ -41,3 +41,19 @@ Following data is used in this analysis
 | test/y_test.txt         | Test labels.                                                                        |
 | test/subject_test.txt   | Identifies the test subjects who performed the activity for each window sample.     |
 | train/subject_train.txt | Identifies the training subjects who performed the activity for each window sample. |
+
+
+##Transformations
+
+Following are the examples of various transformations that are present in the script.
+Please note, some of the transformations are repeated so the following lists the distinct ones.
+
+| Transformations                     | Description                                                                                                          |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| rbind(xtest,xtrain)                 | Row bind , combine data frames by row                                                                                |
+| inner_join(yall,activity)           | Return all rows from x where there are matching values in y, and all columns from x and y.                           |
+| subset(xall,select=selnames)        | Return subsets of vectors, matrices or data frames which meet conditions.                                            |
+| group_by(datauseX,Subject,Activity) | group_by function takes an existing tbl and converts it into a grouped tbl where operations are performed "by group" |
+| summarise_each(grouped,funs(mean))  | Apply one or more functions to one or more columns. Grouping variables are always excluded from modification.        |
+
+##End
